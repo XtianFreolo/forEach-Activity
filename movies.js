@@ -1,3 +1,5 @@
+alert("Its working Sire");
+
 const movies = [
 	{ title: "Inception", director: "Christopher Nolan", yearReleased: 2010 },
 	{ title: "Interstellar", director: "Christopher Nolan", yearReleased: 2014 },
@@ -11,7 +13,13 @@ const movies = [
 	{ title: "Ex Machina", director: "Alex Garland", yearReleased: 2014 }
 ];
 
-movies.forEach(movie => {
-	console.log(`Title: ${movie.title}, Director: ${movie.director}, Year Released: ${movie.yearReleased}`);
-});
+// movies.forEach(movie => {
+// 	console.log(`Title: ${movie.title}, Director: ${movie.director}, Year Released: ${movie.yearReleased}`);
+// });
 
+
+movies.forEach(movie => {
+	if (movie.yearReleased > 2010) {
+		console.log(`Title: ${movie.title}, Director: ${movie.director}, Year Released: ${movie.yearReleased}`);
+	}
+})
